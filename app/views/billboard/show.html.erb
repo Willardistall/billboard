@@ -1,0 +1,15 @@
+<h1>Billboard Charts</h1>
+<br />
+<p>What would you like to do?</p>
+<%= link_to 'Add/View Artists', billboard_artists_path(@billboard) %>
+<br />
+<br />
+<%= link_to 'Edit Billboard Chart', edit_billboard_path(@billboard) %>
+<br />
+<br />
+<%= link_to 'Delete Chart', @billboard, method: :delete %>
+<br />
+<br />
+<%= link_to 'Create a New Billboard Chart', root_path(@billboard) %>
+<br />
+<br />

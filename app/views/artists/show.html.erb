@@ -1,0 +1,16 @@
+<h1>Chart Toppers</h1>
+<h1><%= @billboard.chart_name %>:</h1>
+<h3><%= @artist.artist_name %>:</h3>
+<h4><%# @artist.-A V A T A R- %></h4>
+<h5><%= @artist.descrition %></h5>
+<br />
+<br />
+<br />
+<br />
+<%= link_to 'Edit Artist Details', edit_billboard_artist_path([@billboard, @artist]) %>
+<br />
+<br />
+<%= link_to 'Remove Artist', [@billboard, @artist], method: :delete %>
+<br />
+<br />
+<%= link_to 'Back To Chart List ', billboard_artists_path(@billboard) %>
