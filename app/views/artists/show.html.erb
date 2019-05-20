@@ -1,16 +1,17 @@
 <h1>Chart Toppers</h1>
-<h1><%= @billboard.chart_name %>:</h1>
-<h3><%= @artist.artist_name %>:</h3>
-<h4><%# @artist.-A V A T A R- %></h4>
-<h5><%= @artist.descrition %></h5>
+<h1><%= @billboard.chart_name %></h1>
+<h4>Name: <%= @artist.artist_name %></h4>
+<h4> <%# @artist.A V A T A R %></h4>
+<br />
+<h2>Songs</h2>
+<% @artist.songs.each do |x| %>
+  <%= render 'songs/song', { song: x } %>
+<% end %>
+<br />
+<%= link_to 'Add Song', new_artist_song_path(@artist), class: "ui button blue" %>
 <br />
 <br />
-<br />
-<br />
-<%= link_to 'Edit Artist Details', edit_billboard_artist_path([@billboard, @artist]) %>
-<br />
-<br />
-<%= link_to 'Remove Artist', [@billboard, @artist], method: :delete %>
-<br />
-<br />
-<%= link_to 'Back To Chart List ', billboard_artists_path(@billboard) %>
+<%= link_to 'Edit artist', edit_billboard_artist_path([@billboard, @artist]) %> |
+<%= link_to 'Delete artist', [@billboard, @artist], method: :delete %> |
+<%= link_to 'Back To artists', billboard_artists_path(@billboard) %>
+

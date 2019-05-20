@@ -1,11 +1,11 @@
 <h1>Artists</h1>
-<%= link_to 'View Artists', new_billboard_artist_path(@billboard) %>
+<%= link_to 'Add an Artist', new_billboard_artist_path(@billboard) %>
 <ul>
   <% @artists.each do |artist| %>
-    <li><%= link_to artist.artist_name, [@billboard, artist] %></li>
+    <li><%= link_to artist.artist_name, [@billboard, artist]%></li>
   <% end %>
 </ul>
 <br />
 <br />
 <br />
-<%= link_to 'Bacl to Billboards', root_path(@billboard) %>
+<%= link_to 'Back to Billboards', root_path(@billboard) %>

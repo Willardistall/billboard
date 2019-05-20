@@ -1,2 +1,7 @@
-<h1>Songs#show</h1>
-<p>Find me in app/views/songs/show.html.erb</p>
+<h1>Songs by this artist</h1>
+<%= link_to 'Add another Song', new_artist_song_path %>
+<ul>
+  <% @songs.each do |song| %>
+    <li><%= link_to song.song_name, song %></li>
+  <% end %>
+</ul>

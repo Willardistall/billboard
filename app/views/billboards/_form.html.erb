@@ -1,0 +1,12 @@
+<br />
+<h1 class="ui header">
+<%= @billboard.id ? 'Edit Billboard' : 'Create New Billboard' %>
+</h1>
+<hr />
+<%= form_for @billboard do |f| %>
+  <%= f.label :chart_name %>
+  <%= f.text_field :chart_name, required: true, autofocus: true %>
+  <button class="ui inverted blue button">
+  ADD
+  </button>
+<% end %>

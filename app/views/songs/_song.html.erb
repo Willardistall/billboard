@@ -1,0 +1,7 @@
+<h1><%= @song.id ? 'Edit Song' : 'Create New Song' %></h1>
+<hr />
+<%= form_for [@artist,@song] do |f| %>
+  <%= f.label :song_name %>
+  <%= f.text_field :song_name, required: true, autofocus: true %>
+  <%= f.submit %>
+<% end %>
