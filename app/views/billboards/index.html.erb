@@ -1,4 +1,5 @@
 <br />
+<h2>Welcome <%= current_user.first_name %></h2>
 <h1 class="ui header">
   <i class="star outline icon"></i>
   <div class="content">
@@ -11,3 +12,9 @@
     <li><%= link_to billboard.chart_name, billboard %></li>
   <% end %>
 </ul>
+
+<br />
+<br />
+<br />
+<%= button_to "Log Out", destroy_user_session_path, method: :delete %>
+

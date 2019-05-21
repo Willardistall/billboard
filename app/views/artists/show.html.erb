@@ -5,7 +5,7 @@
 <br />
 <h2>Songs</h2>
 <% @artist.songs.each do |x| %>
-  <%= render 'songs/song', { song: x } %>
+  <%# render 'songs/song', { song: x } %>
 <% end %>
 <br />
 <%= link_to 'Add Song', new_artist_song_path(@artist), class: "ui button blue" %>

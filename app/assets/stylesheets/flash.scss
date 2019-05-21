@@ -1,0 +1,18 @@
+.alert {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.alert-success, .alert-notice {
+  color: #3bc15a;
+  background-color: #d4edda;
+  border-color: #053710;
+}
+
+.alert-error, .alert-alert {
+  color: #c41022;
+  background-color: #f8d7da;
+  border-color: #5b0009;
+}
